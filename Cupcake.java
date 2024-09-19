@@ -4,6 +4,6 @@ public class Cupcake extends Actor
 {
     public void act()
     {
-        setLocation(getX(), getY() + 1); 
+        setLocation(getX(), getY() + 3); 
     }
 }

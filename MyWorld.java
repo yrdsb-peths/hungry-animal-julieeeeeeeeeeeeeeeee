@@ -8,6 +8,8 @@ public class MyWorld extends World
         super(600, 400, 1);
         Seal s = new Seal();
         addObject(s, 300, 350);
+        
+        createCupcake();
     }
     
     public void createCupcake()

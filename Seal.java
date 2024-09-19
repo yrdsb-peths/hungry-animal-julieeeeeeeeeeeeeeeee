@@ -6,11 +6,11 @@ public class Seal extends Actor
     {
         if(Greenfoot.isKeyDown("left"))
         {
-            move(-2);
+            move(-3);
         }
         if(Greenfoot.isKeyDown("right"))
         {
-            move(2);
+            move(3);
         }
         
         eat();
