@@ -13,6 +13,16 @@ public class Seal extends Actor
             move(2);
         }
         
-        removeTouching(Cupcake.class);
+        eat();
+    }
+    
+    public void eat()
+    {
+        if(isTouching(Cupcake.class))
+        {
+            removeTouching(Cupcake.class);
+            MyWorld world = (MyWorld) getWorld();
+            world.createCupcake();
+        }
     }
 }

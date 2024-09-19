@@ -10,7 +10,7 @@ public class MyWorld extends World
         addObject(s, 300, 350);
     }
     
-    public void createApple()
+    public void createCupcake()
     {
         Cupcake cupcake = new Cupcake();
         int x = Greenfoot.getRandomNumber(600);
