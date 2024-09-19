@@ -8,8 +8,13 @@ public class MyWorld extends World
         super(600, 400, 1);
         Seal s = new Seal();
         addObject(s, 300, 350);
-        
+    }
+    
+    public void createApple()
+    {
         Cupcake cupcake = new Cupcake();
-        addObject(cupcake, 300, 100);
+        int x = Greenfoot.getRandomNumber(600);
+        int y = Greenfoot.getRandomNumber(100);
+        addObject(cupcake, x, 7);
     }
 }
