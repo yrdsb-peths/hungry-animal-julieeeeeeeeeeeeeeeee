@@ -4,6 +4,15 @@ public class Seal extends Actor
 {
     public void act()
     {
-        // Add your action code here.
+        if(Greenfoot.isKeyDown("left"))
+        {
+            move(-2);
+        }
+        if(Greenfoot.isKeyDown("right"))
+        {
+            move(2);
+        }
+        
+        removeTouching(Cupcake.class);
     }
 }
