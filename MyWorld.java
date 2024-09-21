@@ -9,6 +9,10 @@ public class MyWorld extends World
         Seal s = new Seal();
         addObject(s, 300, 350);
         
+        
+        Label scoreLabel = new Label(0, 80);
+        addObject(scoreLabel, 50, 50);
+        
         createCupcake();
     }
     
@@ -17,6 +21,6 @@ public class MyWorld extends World
         Cupcake cupcake = new Cupcake();
         int x = Greenfoot.getRandomNumber(600);
         int y = Greenfoot.getRandomNumber(100);
-        addObject(cupcake, x, 7);
+        addObject(cupcake, x, y);
     }
 }
