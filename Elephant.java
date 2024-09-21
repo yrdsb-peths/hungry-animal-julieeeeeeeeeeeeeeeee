@@ -1,7 +1,15 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
-public class Seal extends Actor
+public class Elephant extends Actor
 {
+    GreenfootSound elephantSound = new GreenfootSound("elephantcub.mp3");
+    GreenfootImage idle = new GreenfootImage("images/elephant_idle/idle0.png");
+    
+    public Elephant()
+    {
+        setImage(idle);
+    }
+    
     public void act()
     {
         if(Greenfoot.isKeyDown("left"))
@@ -24,6 +32,7 @@ public class Seal extends Actor
             MyWorld world = (MyWorld) getWorld();
             world.createCupcake();
             world.increaseScore();
+            elephantSound.play();
         }
     }
 }
