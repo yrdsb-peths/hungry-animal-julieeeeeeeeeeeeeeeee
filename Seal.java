@@ -23,6 +23,7 @@ public class Seal extends Actor
             removeTouching(Cupcake.class);
             MyWorld world = (MyWorld) getWorld();
             world.createCupcake();
+            world.increaseScore();
         }
     }
 }
