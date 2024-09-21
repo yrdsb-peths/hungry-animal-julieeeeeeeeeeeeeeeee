@@ -15,7 +15,7 @@ public class MyWorld extends World
         scoreLabel = new Label(0, 80);
         addObject(scoreLabel, 50, 50);
         
-        createCupcake();
+        createApple();
     }
     
     public void gameOver()
@@ -30,11 +30,11 @@ public class MyWorld extends World
         scoreLabel.setValue(score);
     }
     
-    public void createCupcake()
+    public void createApple()
     {
-        Cupcake cupcake = new Cupcake();
+        Apple apple = new Apple();
         int x = Greenfoot.getRandomNumber(600);
         int y = Greenfoot.getRandomNumber(100);
-        addObject(cupcake, x, y);
+        addObject(apple, x, y);
     }
 }

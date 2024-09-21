@@ -1,6 +1,6 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
-public class Cupcake extends Actor
+public class Apple extends Actor
 {
     public void act()
     {
