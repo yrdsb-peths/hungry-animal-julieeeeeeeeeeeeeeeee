@@ -69,12 +69,16 @@ public class Elephant extends Actor
     
     public void eat()
     {
-        if(isTouching(Apple.class))
+        Actor actor = getOneIntersectingObject(Food.class);
+        if(actor != null)
         {
-            removeTouching(Apple.class);
+            Food food = (Food) actor; 
             MyWorld world = (MyWorld) getWorld();
-            world.createApple();
-            world.increaseScore();
+            
+            world.increaseScore(food.value);
+            getWorld().removeObject(food);
+            world.createFood();
+            
             elephantSound.play();
         }
     }

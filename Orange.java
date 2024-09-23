@@ -1,12 +1,16 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
-public class Apple extends Food
+public class Orange extends Food
 {
-    private int speed = 2;
+    /**
+     * Oranges are bonus fruit that are worth more points but will not end 
+     * the game if they are not collected.
+     */
+    private int speed = 3;
     
-    public Apple()
+    public Orange()
     {
-        super(1);
+        super(5);
     }
     
     public void act()
@@ -16,13 +20,13 @@ public class Apple extends Food
         MyWorld world = (MyWorld) getWorld();
         if(getY() >= world.getHeight())
         {
-            world.gameOver();
             world.removeObject(this);
+            world.createFood();
         }
     }
     
     public void setSpeed(int spd)
     {
-        speed = spd;
+        speed = spd; 
     }
 }
