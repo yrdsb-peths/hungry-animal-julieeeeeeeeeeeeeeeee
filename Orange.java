@@ -6,7 +6,7 @@ public class Orange extends Food
      * Oranges are bonus fruit that are worth more points but will not end 
      * the game if they are not collected.
      */
-    private int speed = 3;
+    private int speed = 5;
     
     public Orange()
     {

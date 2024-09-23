@@ -33,7 +33,7 @@ public class MyWorld extends World
     
     public void createFood()
     {
-        int rand = Greenfoot.getRandomNumber(4);
+        int rand = Greenfoot.getRandomNumber(5);
         Food food; 
         if(rand == 0)
         {
